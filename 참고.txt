@@ -31,3 +31,12 @@ POST _reindex
         "index": "card_data"
     }
 }
+
+
+# MYSQL 동기화
+https://www.elastic.co/kr/blog/how-to-keep-elasticsearch-synchronized-with-a-relational-database-using-logstash
+https://m.blog.naver.com/olpaemi/221644176875
+
+
+# 한글 사용
+https://velog.io/@broccoliindb/mysql-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-elasticsearch%EB%A1%9C-%EA%B2%80%EC%83%89%ED%95%98%EA%B8%B0

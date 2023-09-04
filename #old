@@ -11,7 +11,7 @@ input{
         use_column_value => true
         tracking_column_type => "numeric"
         schedule => "*/5 * * * * *"
-        statement => "SELECT *, UNIX_TIMESTAMP(Date) AS unix_ts_in_secs FROM df_brazil WHERE (UNIX_TIMESTAMP(Date) > :sql_last_value AND Date < NOW()) ORDER BY Date ASC"
+        statement => "SELECT *, UNIX_TIMESTAMP(Date) AS unix_ts_in_secs FROM df_brazil WHERE (UNIX_TIMESTAMP(Date) > :sql_last_value) ORDER BY Date ASC"
         last_run_metadata_path => "/usr/share/logstash/.logstash_jdbc_last_run"
     }
 }

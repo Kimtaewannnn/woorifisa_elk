@@ -4,13 +4,13 @@ db_tables =  [
 "df_ftse",
 "df_gold",
 "df_india",
-# "df_kor10y",
-# "df_kor3y",
+"df_kor10y",
+"df_kor3y",
 "df_kospi",
 "df_nasdaq",
 "df_nikkei",
-# "df_usa10y",
-# "df_usa3y",
+"df_usa10y",
+"df_usa3y",
 "df_taiwan"  
 ]
 
@@ -67,7 +67,7 @@ for i in range(0,len(arr)):
     print(f"           index => \"logstash-{arr[i].split('_')[1]}\"")
     print("            user => \"logstash_internal\"")
     print("            password => \"${LOGSTASH_INTERNAL_PASSWORD}\"")
-    # print("            document_id => \"%{[@metadata][Date]}\"")
+    print("            document_id => \"%{[@metadata][Date]}\"")
     print("            }")
     print("    }")
 
